@@ -1,0 +1,30 @@
+{
+  "name": "deepcomet-forge-react-example",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Example implementation of the @deepcomet/forge-react framework",
+  "author": "mintthemoon <mint@mintthemoon.xyz>",
+  "homepage": "https://mintthemoon.xyz",
+  "license": "Unlicense",
+  "type": "module",
+  "browserslist": [
+    ">0.3%",
+    "defaults",
+    "fully supports es6-module"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepcomet/forge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deepcomet/forge/issues"
+  },
+  "dependencies": {
+    "@deepcomet/forge-react": "workspace:*"
+  }
+}

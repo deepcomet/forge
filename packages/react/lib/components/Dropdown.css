@@ -1,0 +1,49 @@
+@import "./base.css";
+
+.vf-dropdown {
+  --color-content-bg: var(--color-bg-neutral);
+  --color-content-sep: var(--color-border-neutral);
+
+  position: relative;
+
+  & > button {
+    inline-size: 100%;
+  }
+
+  & > .vf-dropdown-dialog {
+    position: absolute;
+    inset-block-start: 100%;
+    z-index: 1;
+    min-inline-size: var(--width-xs);
+    margin-block-start: var(--spacing-1);
+    background-color: var(--color-content-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--drop-shadow-lg);
+
+    &.vf-dropdown-dialog-start {
+      inset-inline-start: 0;
+    }
+
+    &.vf-dropdown-dialog-end {
+      inset-inline-start: auto;
+    }
+
+    & > .vf-dropdown-content {
+      & > li button {
+        min-inline-size: 100%;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      & > li:first-child button {
+        border-start-start-radius: var(--radius-lg);
+        border-start-end-radius: var(--radius-lg);
+      }
+
+      & > li:last-child button {
+        border-end-start-radius: var(--radius-lg);
+        border-end-end-radius: var(--radius-lg);
+      }
+    }
+  }
+}
