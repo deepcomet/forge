@@ -2,7 +2,6 @@
   "name": "deepcomet-forge",
   "version": "0.0.1",
   "description": "Create Cosmos SDK apps with Deepcomet Forge",
-  "private": true,
   "scripts": {
     "build": "just build",
     "clean": "just clean",
